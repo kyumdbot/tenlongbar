@@ -1,0 +1,6 @@
+{
+    "default": "Book or Other",
+    "category" : {
+        "Electronic Product" : ["seeed", "RedBear", "電子套件/開發板", "RASPBERRY-PI"]
+    }
+}
