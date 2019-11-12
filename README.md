@@ -90,8 +90,6 @@ $ python3 tenlongbar.py order-items-xxxxxxxx.xlsx 2018
 
 看到上面這張圖，嚇屎本柴了...掩面...
 
-<br>
-
 
 ### 顯示`圓餅圖` (使用 tenlongpie.py)：
 
@@ -118,7 +116,7 @@ $ python3 tenlongpie.py order-items-xxxxxxxx.xlsx 2018
 ```
 預設類別的名稱叫做`Book or Other`。
 
-在`category`裡我定義了一個類別名叫：`Electronic Product`，後面那個陣列：["seeed", "RedBear", "電子套件/開發板", "RASPBERRY-PI"] 是`購物明細 xlsx 檔案`裡`出版社`那個欄位裡的值，也就是說，我把`出版社`那欄有出現`seeed`、`RedBear`、`電子套件/開發板`、`RASPBERRY-PI`的訂單歸類到`Electronic Product`裡，而不屬於`category`裡列出的，就是屬於`default`類別。
+在`category`裡我定義了一個類別名叫：`Electronic Product`，後面那個陣列：["seeed", "RedBear", "電子套件/開發板", "RASPBERRY-PI"] 是`購物明細 xlsx 檔案`裡`出版社`那個欄位裡的值，也就是說，我把`出版社`那欄是`seeed`、`RedBear`、`電子套件/開發板`、`RASPBERRY-PI`等的訂單歸類到`Electronic Product`裡，而不屬於`category`裡列出的，就是屬於`default`類別。
 
 因為天瓏上的電子產品還蠻多樣的，我沒有把所有電子產品的`出版社`的值都寫進去，我只有填我買過的電子零件的`出版社`的值，如果不符合你的情況，你可以自行修改`category.json`。
 
