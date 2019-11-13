@@ -117,7 +117,7 @@ def main():
         return
     print()
 
-    with open('category.json') as f:
+    with open('category.json', encoding='utf-8') as f:
         category_data = json.load(f)
     print(category_data)
     print()
