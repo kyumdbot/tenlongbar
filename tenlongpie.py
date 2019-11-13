@@ -74,10 +74,11 @@ class TenlongOrdersPlotPie:
         for name in category_names:
             subtotal_labels.append(subtotal_dict[name])
             rate_list.append( subtotal_dict[name]/total )
+        print(rate_list)
         
         subtotal_labels = [ "NT$ " + str(item) for item in subtotal_labels]
 
-        plt.pie(rate_list, labels=subtotal_labels, autopct="%3.1f%%",
+        plt.pie(rate_list, labels=subtotal_labels, autopct="%3.2f%%",
                 startangle=45, pctdistance=0.7, labeldistance=1.2)
         top_title = "Cost in the " + str(year) + " C.E.  (total: NT$ " + str(total) + ")"
         plt.title(top_title)
